@@ -1,0 +1,61 @@
+/* Main Style */
+
+:root {
+    --dark: #09151a;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ccc;
+    font-size: 15px;
+    font-family: 'Lucida Sans';
+}
+
+body {
+    background: #575558;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.container-header {
+    display: flex;
+    height: 10%;
+}
+
+.container-aside-article {
+    display: flex;
+    height: 90%;
+}
+
+/* Customize */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #872;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a84;
+  }
