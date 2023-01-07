@@ -1,5 +1,5 @@
 <p>
-  <a href="#">
+  <a href="https://github.com/time-manager/app.html">
     <img src="assets/logo-icon.png" title="logo"  width="200px"/>
   </a>
 </p>
