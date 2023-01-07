@@ -1,21 +1,26 @@
 /* ---------- MAIN CSS FILE ---------- */
 
 :root {
-  --chyellow: #C0C045;
-  --clyellow: #858525;
-  --chblack: #1F1F1F;
+  --chyellow: #C0C040;
+  --clyellow: #C0C040B0;
+  --chred: #C04040;
+  --clred: #C04040B0;
+  --chgreen: #40C040;
+  --clgreen: #40C040B0;
+  --chwhite: #C0C0C0;
+  --clwhite: #C0C0C0B0;
+  --chblack: #202020;
   --clblack: #101010;
-  --chwhite: #F0F0F0;
-  --clwhite: #CCCCCC;
 }
 
 * {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  color: var(--clwhite);
+  color: var(--chyellow);
   font-size: 15px;
   font-family: 'Lucida Sans';
+  overflow: hidden;
 }
 
 body {
@@ -36,28 +41,49 @@ body {
 .container-header {
   display: flex;
   height: 10%;
+  padding: 0.5em;
 }
 
-.container-header-title {
-  width: 100%;
-  padding: 1em;
-  font-size: 1.2em;
+.container-header-time {
+  background-color: var(--clblack);
+  border: solid 1px var(--clyellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-size: 1.4em;
+  font-weight: 500;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+.container-header-date {
+  background-color: var(--clblack);
+  border: solid 1px var(--clyellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-size: 1.4em;
+  font-weight: 500;
+  padding: 0.5em;
 }
 
 .container-body {
   display: flex;
   height: 90%;
+  padding: 0.5em;
 }
 
 .container-body-aside {
   width: 20%;
-  padding: 0 1em;
+  padding-right: 0.5em;
 }
 
 .days {
-  border: solid 2px var(--chyellow);
-  color: var(--chyellow);
-  margin-bottom: 1em;
+  border: solid 1px var(--clyellow);
+  color: var(--clyellow);
+  margin-bottom: 0.5em;
   padding: 0.5em;
   width: 100%;
   font-size: 100%;
@@ -66,8 +92,7 @@ body {
 }
 
 .selected-day {
-  background-color: var(--chyellow);
-  border: solid 2px var(--chyellow);
+  background-color: var(--clyellow);
   color: var(--chblack);
 }
 
@@ -78,29 +103,39 @@ body {
 table {
   width: 100%;
   height: 100%;
-  padding: 0 0.5em 0.5em 0;
 }
 
 table tr td {
-  outline: solid 2px var(--chyellow);
+  outline: solid 1px var(--clyellow);
+  position: relative;
 }
 
 .hours {
-  color: var(--chyellow);
+  background-color: var(--clgreen);
+  color: var(--chwhite);
   position: absolute;
-  padding: 0.5em;
-  width: 100%;
+  padding: 0.2em;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.empty-hour {
+  background-color: var(--clred);
 }
 
 .textarea {
-  background-color: var(--chblack);
+  background-color: var(--clblack);
   padding: 0.5em;
-  padding-top: 2em;
+  padding-top: 2.5em;
   width: 100%;
   height: 100%;
   outline: none;
   border: none;
   resize: none;
+}
+
+.current-hour {
+  background-color: var(--chblack);
 }
 
 /* Customize 
