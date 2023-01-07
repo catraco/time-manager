@@ -1,61 +1,129 @@
-/* Main Style */
+/* ---------- MAIN CSS FILE ---------- */
 
 :root {
-    --dark: #09151a;
+  --chyellow: #C0C045;
+  --clyellow: #858525;
+  --chblack: #1F1F1F;
+  --clblack: #101010;
+  --chwhite: #F0F0F0;
+  --clwhite: #CCCCCC;
 }
 
 * {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    color: #ccc;
-    font-size: 15px;
-    font-family: 'Lucida Sans';
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--clwhite);
+  font-size: 15px;
+  font-family: 'Lucida Sans';
 }
 
 body {
-    background: #575558;
-    width: 100vw;
-    height: 100vh;
+  background-color: var(--clblack);
+  width: 100vw;
+  height: 100vh;
+  padding: 5%;
+  overflow: hidden;
 }
 
-main {
-    padding: 2%;
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5em;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+.container-main {
+  background-color: var(--chblack);
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .container-header {
-    display: flex;
-    height: 10%;
+  display: flex;
+  height: 10%;
 }
 
-.container-aside-article {
-    display: flex;
-    height: 90%;
+.container-header-title {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.2em;
 }
 
-/* Customize */
+.container-body {
+  display: flex;
+  height: 90%;
+}
 
-/* width */
+.container-body-aside {
+  width: 20%;
+  padding: 0 1em;
+}
+
+.days {
+  border: solid 2px var(--chyellow);
+  color: var(--chyellow);
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 100%;
+  font-size: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.selected-day {
+  background-color: var(--chyellow);
+  border: solid 2px var(--chyellow);
+  color: var(--chblack);
+}
+
+.container-body-article {
+  width: 80%;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5em 0.5em 0;
+}
+
+table tr td {
+  outline: solid 2px var(--chyellow);
+}
+
+.hours {
+  color: var(--chyellow);
+  position: absolute;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.textarea {
+  background-color: var(--chblack);
+  padding: 0.5em;
+  padding-top: 2em;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+/* Customize 
+
+textarea {
+  outline: none;
+  border: none;
+}
+
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #000;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #872;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #a84;
-  }
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #872;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a84;
+}
+
+*/

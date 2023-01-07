@@ -7,31 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="assets/main.js"></script>
     <link rel="stylesheet" href="assets/main.css">
-    <link rel="stylesheet" href="assets/loading-page.css">
-    <link rel="stylesheet" href="assets/header.css">
-    <link rel="stylesheet" href="assets/nav.css">
-    <link rel="stylesheet" href="assets/aside.css">
-    <link rel="stylesheet" href="assets/article.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/page-loading.css">
+    <title>TIME MANAGER</title>
 
 </head>
 <body>
 
-    <div class="loading-page">Loading...</div>
-
-    <main>
+    <div class="container-main">
+        <div class="container-page-loading">Loading...</div>
         <div class="container-header">
-            <header>Header</header>
+            <div class="container-header-title">🧾️ TIME MANAGER<hr></div>
         </div>
-        <div class="container-aside-article">
-            <aside>
-                Aside
-            </aside>
-            <article>
-                <table></table>
-            </article>
+        <div class="container-body">
+            <div class="container-body-aside"></div>
+            <div class="container-body-article">
+                <table class="section-table"></table>
+            </div>
         </div>
-    </main>
+    </div>
+    <button onclick="clear_local_userdata()" style="position: absolute; top: 0; left: 0; padding: 0.2em;">Clear</button>
+    <!-- L.A. Justice -->
 
 </body>
 </html>
