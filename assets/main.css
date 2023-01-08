@@ -135,7 +135,7 @@ table tr td {
 }
 
 .current-hour {
-  background-color: var(--chblack);
+  background-color: #00FF0015;
 }
 
 /* Customize 
