@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+
+:root {
+  --primary: #00ff0020;
+  --secondary: #102a2c;
+  --text: #43b945;
+  --dark: #20355c;
+  --light: #ffffff;
+  --border: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Strait', sans-serif;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--text);
+  height: 100vh;
+  padding-top: 1rem;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+.local-time {
+  background-color: var(--secondary);
+  border: solid 1px var(--border);
+  border-radius: 6px;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.local-date {
+  background-color: var(--secondary);
+  border: solid 1px var(--border);
+  border-radius: 6px;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--secondary);
+  border: solid 1px var(--border);
+  border-radius: 6px;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+aside {
+  background-color: var(--primary);
+  border: solid 1px var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+article {
+  background-color: var(--primary);
+  border: solid 1px var(--border);
+  border-radius: 6px;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.calendar {
+  box-shadow: var(--border) 0 0 5px;
+}
+
+.calendar-cells {
+  display: flex;
+  flex-direction: column; 
+  padding: 0;
+}
+
+.hour {
+  display: block;
+  background-color: var(--text);
+  color: var(--border);
+  width: 100%;
+  padding: 0.2rem;
+  font-size: 0.8em;
+  top: 0;
+  opacity: 0.6;
+}
+
+.selected-hour {
+  opacity: 1 !important;
+}
+
+
+.calendar-cells textarea {
+  background-color: var(--secondary);
+  color: var(--text);
+  width: 100%;
+  padding: 0.2rem;
+  resize: none;
+  outline: none;
+  border: none;
+  border-left: solid 1px var(--text);
+}
+
+.animate-cell {
+  animation: animation-cell 1s;
+}
+
+@keyframes animation-cell {
+  0%{
+    background-color: var(--text);
+  }
+  100% {
+    background-color: var(--secondary);
+  }
+}
+
+.buttons {
+  background-color: var(--secondary);
+  border: solid 1px var(--text);
+  box-shadow: var(--border) 0 0 5px;
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0.2rem;
+  margin-bottom: 0.2rem;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.selected-day {
+  background-color: var(--text);
+  color: var(--secondary);
+}
+
+.buttons:last-child {
+  margin: 0;
+}
+
+.buttons:hover {
+  background-color: var(--text);
+  color: var(--secondary);
+}

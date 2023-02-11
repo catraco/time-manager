@@ -1,32 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/main.css">
-    <link rel="stylesheet" href="assets/page-loading.css">
-    <title>TIME MANAGER</title>
-
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <title>Alpha - World</title>
 </head>
 <body>
 
-    <div class="container-main">
-        <div class="container-page-loading">Loading...</div>
-        <div class="container-header">
-            <div class="container-header-time"></div>
-            <div class="container-header-date"></div>
+  <main class="container-lg">
+
+    <div class="row">
+
+      <header class="col-12">
+        <div class="row">
+          <div class="col-md-4 local-time">time</div>
+          <div class="col-md-4 local-date">date</div>
+          <nav class="col-md-4">TIP - Must seize the time carefully!</nav>
         </div>
-        <div class="container-body">
-            <div class="container-body-aside"></div>
-            <div class="container-body-article">
-                <table class="section-table"></table>
+      </header>
+
+      <aside class="col-md-3">
+        <button class="buttons select-day" day="Mon">Monday</button>
+        <button class="buttons select-day" day="Tue">Tuesday</button>
+        <button class="buttons select-day" day="Wed">Wednesday</button>
+        <button class="buttons select-day" day="Thu">Thursday</button>
+        <button class="buttons select-day" day="Fri">Friday</button>
+        <button class="buttons select-day" day="Sat">Saturday</button>
+        <button class="buttons select-day" day="Sun">Sunday</button>
+      </aside>
+
+      <article class="col-md-9">
+        <section class="calendar">
+          <div class="row m-0">
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">00:00</span>
+              <textarea></textarea>
             </div>
-        </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">01:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">02:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">03:00</span>
+              <textarea></textarea>
+            </div>
+          </div>
+          <div class="row m-0">
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">04:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">05:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">06:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">07:00</span>
+              <textarea></textarea>
+            </div>
+          </div>
+          <div class="row m-0">
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">08:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">09:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">10:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">11:00</span>
+              <textarea></textarea>
+            </div>
+          </div>
+          <div class="row m-0">
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">12:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">13:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">14:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">15:00</span>
+              <textarea></textarea>
+            </div>
+          </div>
+          <div class="row m-0">
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">16:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">17:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">18:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">19:00</span>
+              <textarea></textarea>
+            </div>
+          </div>
+          <div class="row m-0">
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">20:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">21:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">22:00</span>
+              <textarea></textarea>
+            </div>
+            <div class="col-md-3 calendar-cells">
+              <span class="hour">23:00</span>
+              <textarea></textarea>
+            </div>
+          </div>
+        </section>
+      </article>
+
     </div>
-    <script src="assets/main.js"></script>
-    <!-- L.A. Justice -->
+
+  </main>
+
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
