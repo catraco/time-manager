@@ -1,6 +1,6 @@
 <p>
   <a href="https://catraco.github.io/time-manager/app.html">
-    <img src="logo-icon.png" title="logo"  width="200px"/>
+    <img src="icon.png" title="logo"  width="200px"/>
   </a>
 </p>
 
