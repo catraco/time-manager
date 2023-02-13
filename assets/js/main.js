@@ -1,6 +1,6 @@
 var local_date = document.querySelector(".local-date")
 var local_time = document.querySelector(".local-time")
-var select_day = document.querySelectorAll(".select-day")
+var days = document.querySelectorAll(".days")
 var hours = document.querySelectorAll(".hour")
 var cells = document.querySelectorAll("calendar-cells")
 var calendar_cells = document.querySelectorAll("textarea")
@@ -66,7 +66,7 @@ function get_local_time(){
 
 function setup_aside(){
   app_data["selected_day"] = app_data["date"].slice(0, 3)
-  Array.from(select_day).forEach( (button) => {
+  Array.from(days).forEach( (button) => {
     if(button.getAttribute("day") === app_data["selected_day"]) button.classList.add("selected-day")
     button.onclick = () => {
       document.querySelector(".selected-day").classList.remove("selected-day")

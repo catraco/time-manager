@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="icon.png" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
   <link rel="stylesheet" href="assets/css/main.css"/>
-  <title>Alpha - World</title>
+  <title>m-manage</title>
 </head>
 <body>
 
@@ -15,25 +15,27 @@
 
     <div class="row">
 
-      <header class="col-12">
+      <header class="col-md-12">
         <div class="row">
           <div class="col-md-4 local-time">time</div>
           <div class="col-md-4 local-date">date</div>
-          <nav class="col-md-4">TIP - Must seize the time carefully!</nav>
+          <div class="col-md-4 tip">TIP</div>
         </div>
       </header>
 
       <aside class="col-md-3">
-        <button class="buttons select-day" day="Mon">Monday</button>
-        <button class="buttons select-day" day="Tue">Tuesday</button>
-        <button class="buttons select-day" day="Wed">Wednesday</button>
-        <button class="buttons select-day" day="Thu">Thursday</button>
-        <button class="buttons select-day" day="Fri">Friday</button>
-        <button class="buttons select-day" day="Sat">Saturday</button>
-        <button class="buttons select-day" day="Sun">Sunday</button>
+        <section class="calendar">
+          <button class="buttons days" day="Mon">Monday</button>
+          <button class="buttons days" day="Tue">Tuesday</button>
+          <button class="buttons days" day="Wed">Wednesday</button>
+          <button class="buttons days" day="Thu">Thursday</button>
+          <button class="buttons days" day="Fri">Friday</button>
+          <button class="buttons days" day="Sat">Saturday</button>
+          <button class="buttons days" day="Sun">Sunday</button>
+        </section>
       </aside>
 
-      <article class="col-md-9">
+      <article class="col-9">
         <section class="calendar">
           <div class="row m-0">
             <div class="col-md-3 calendar-cells">
