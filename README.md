@@ -5,7 +5,7 @@
 </p>
 
 - # Time Manager
--  Flexible application to manage your time and daily tasks for more productivity and efficiency.
+- Application to manage your time and daily tasks for more productivity and efficiency.
 -  Hosting by github.
 
 <br>
