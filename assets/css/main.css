@@ -59,7 +59,7 @@ article {
 }
 
 .calendar-cells {
-  box-shadow: var(--border) 0 0 5px;
+  box-shadow: var(--border) 0 0 8px;
   display: flex;
   flex-direction: column; 
   padding: 0;
@@ -105,7 +105,7 @@ article {
 .buttons {
   background-color: var(--secondary);
   border: solid 1px var(--secondary);
-  box-shadow: var(--border) 0 0 5px;
+  box-shadow: var(--border) 0 0 6px;
   color: var(--text);
   width: 100%;
   border-radius: 1rem;
