@@ -1,154 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
 
 :root {
-  --main: #06100a;
-  --primary: #3a6352;
-  --secondary: #4b7e65;
-  --text: #8dff88;
-  --border: #000000E0;
+  --primary: #425e52;
+  --secondary: #5b7a6b;
+  --text: #a3f39f;
+  --dark: #06100a;
+  --light: #e0e0e0;
+  --border: #000000a0;
 }
 
 * {
-  padding: 0;
   margin: 0 auto;
+  padding: 0;
   box-sizing: border-box;
-  font-size: 18px;
-  font-weight: 500;
   font-family: 'Strait', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 body {
-  background-color: var(--main);
+  background-color: var(--dark);
   color: var(--text);
+  width: 100vw;
   height: 100vh;
-  padding-top: 1rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
-header {
-  text-align: center;
-}
-
-.local-time {
-  background-color: var(--secondary);
-  border: solid 1px var(--border);
-  padding: 0.2rem;
-}
-
-.local-date {
-  background-color: var(--secondary);
-  border: solid 1px var(--border);
-  padding: 0.2rem;
-}
-
-.tip {
-  background-color: var(--secondary);
-  border: solid 1px var(--border);
-  padding: 0.2rem;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  padding: 0rem !important;
-}
-
-.selector{
-  background-color: var(--primary);
-  border: solid 1px var(--border);
-  padding: 1rem;
+main {
+  padding: 0 !important;
   margin: 0;
-}
-
-.select {
-  background-color: var(--secondary);
-  border: solid 1px var(--secondary);
-  box-shadow: var(--border) 0 0 5px;
-  color: var(--text);
-  width: 100%;
-  height: 100%;
-  padding: 0.2rem;
-  outline: none;
-}
-
-.calendar-day {
-  background-color: var(--primary);
-  border: solid 1px var(--border);
-  padding: 1rem;
-  width: 100%;
-  height: 100%;
-}
-
-article {
-  background-color: var(--primary);
-  border: solid 1px var(--border);
-  padding: 1rem !important;
-}
-
-.calendar-cells {
-  box-shadow: var(--border) 0 0 5px;
-  display: flex;
-  flex-direction: column; 
-  padding: 0;
-}
-
-.hour {
-  background-color: var(--secondary);
-  color: var(--border);
-  width: 100%;
-  padding: 0.2rem;
-  font-size: 0.8em;
-  top: 0;
-}
-
-.selected-hour {
-  background-color: var(--text);
-}
-
-.calendar-cells textarea {
-  background-color: var(--primary);
-  color: var(--text);
-  width: 100%;
-  padding: 0.2rem;
-  resize: none;
-  outline: none;
-  border: none;
-}
-
-.animate-cell {
-  animation: animation-cell 1s;
-}
-
-@keyframes animation-cell {
-  0%{
-    background-color: var(--text);
-  }
-  100% {
-    background-color: var(--primary);
-  }
-}
-
-.buttons {
-  background-color: var(--secondary);
-  border: solid 1px var(--secondary);
-  box-shadow: var(--border) 0 0 5px;
-  color: var(--text);
-  width: 100%;
-  border-radius: 1rem;
-  padding: 0.2rem;
-  margin: 0;
-  margin-bottom: 0.5rem;
-  transition: background 0.5s;
-}
-
-.buttons:last-child {
-  margin: 0;
-}
-
-.buttons:hover {
-  border: solid 1px var(--text);
-}
-
-.selected-day {
-  background-color: var(--text);
-  color: var(--secondary);
 }

@@ -8,41 +8,56 @@
   <link rel="shortcut icon" href="icon.png" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
   <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="assets/css/header.css"/>
+  <link rel="stylesheet" href="assets/css/aside.css"/>
+  <link rel="stylesheet" href="assets/css/article.css"/>
 </head>
 <body>
 
   <main class="container-lg">
+    <div class="row m-0">
 
-    <div class="row">
+      <header class="col-12 header">
 
-      <header class="col-md-12">
-        <div class="row">
-          <div class="col-md-4 local-time">time</div>
-          <div class="col-md-4 local-date">date</div>
-          <div class="col-md-4 tip">TIP</div>
+        <div class="row m-0">
+
+          <section class="col-md-4 container-select">
+
+            <select class="select">
+
+              <option class="option">Calendar</option>
+              <option class="option">Task manager</option>
+
+            </select>
+
+          </section>
+          <section class="col-6 col-md-4 date">date</section>
+          <section class="col-6 col-md-4 time">time</section>
+
         </div>
+
       </header>
 
-      <aside class="col-md-3">
-        <section class="selector">
-          <select class="select">
-            <option class="option">Calendar</option>
-            <option class="option">Task manager</option>
-          </select>
+      <aside class="col-md-3 aside">
+
+        <section class="aside-calendar">
+
+          <button class="buttons btn-day" day="Mon">Monday</button>
+          <button class="buttons btn-day" day="Tue">Tuesday</button>
+          <button class="buttons btn-day" day="Wed">Wednesday</button>
+          <button class="buttons btn-day" day="Thu">Thursday</button>
+          <button class="buttons btn-day" day="Fri">Friday</button>
+          <button class="buttons btn-day" day="Sat">Saturday</button>
+          <button class="buttons btn-day" day="Sun">Sunday</button>
+
         </section>
-        <section class="calendar-day">
-          <button class="buttons day" day="Mon">Monday</button>
-          <button class="buttons day" day="Tue">Tuesday</button>
-          <button class="buttons day" day="Wed">Wednesday</button>
-          <button class="buttons day" day="Thu">Thursday</button>
-          <button class="buttons day" day="Fri">Friday</button>
-          <button class="buttons day" day="Sat">Saturday</button>
-          <button class="buttons day" day="Sun">Sunday</button>
-        </section>
+
       </aside>
 
-      <article class="col-9">
+      <article class="col-md-9 article">
+
         <section class="calendar">
+
           <div class="row m-0">
             <div class="col-md-3 calendar-cells">
               <span class="hour">00:00</span>
@@ -151,14 +166,16 @@
               <textarea></textarea>
             </div>
           </div>
+
         </section>
+
       </article>
 
     </div>
 
   </main>
 
-  <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
 
 </body>
 </html>

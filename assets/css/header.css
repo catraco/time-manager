@@ -1,0 +1,30 @@
+.header {
+  text-align: center;
+  padding: 0rem !important;
+}
+
+.header .time {
+  background-color: var(--secondary);
+  border: solid 1px var(--border);
+  padding: 0.2rem;
+}
+
+.header .date {
+  background-color: var(--secondary);
+  border: solid 1px var(--border);
+  padding: 0.2rem;
+}
+
+.header .container-select{
+  border: solid 1px var(--border);
+  padding: 0;
+}
+
+.header .container-select .select {
+  background-color: var(--secondary);
+  color: var(--text);
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem;
+  outline: none;
+}

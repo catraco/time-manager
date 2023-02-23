@@ -1,0 +1,76 @@
+.article {
+  background-color: var(--primary);
+  border: solid 1px var(--border);
+  padding: 1rem !important;
+}
+
+.calendar {
+  border: solid 1px var(--secondary);
+}
+
+.calendar-cells {
+  display: flex;
+  flex-direction: column; 
+  padding: 0;
+  border: solid 1px var(--secondary);
+}
+
+.hour {
+  width: 100%;
+  padding: 0.2rem;
+}
+
+.selected-cell {
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+.calendar-cells textarea {
+  background-color: var(--primary);
+  color: var(--light);
+  width: 100%;
+  padding: 0.2rem;
+  font-size: 0.85em;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+.animate-cell {
+  animation: animation-cell 1s;
+}
+
+@keyframes animation-cell {
+  from {
+    background-color: var(--text);
+  }
+  to {
+    background-color: var(--primary);
+  }
+}
+
+.buttons {
+  background-color: var(--secondary);
+  border: solid 1px var(--secondary);
+  box-shadow: var(--border) 0 0 5px;
+  color: var(--text);
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  transition: background 0.5s;
+}
+
+.buttons:last-child {
+  margin: 0;
+}
+
+.buttons:hover {
+  border: solid 1px var(--text);
+}
+
+.selected-day {
+  background-color: var(--text);
+  color: var(--secondary);
+}
